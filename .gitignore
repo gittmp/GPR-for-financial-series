@@ -1,0 +1,9 @@
+Resources/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+Report structure.pdf
+Report Marksheet.pdf
+.DS_Store

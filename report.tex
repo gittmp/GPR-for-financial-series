@@ -1,0 +1,70 @@
+% Preamble
+\documentclass[a4paper, 11pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{amsmath}
+\pgfplotsset{width=9cm,compat=1.9}
+\title{Data-Driven Modelling of Financial Markets}
+\author{Student ID}
+\date{}
+
+\pgfplotstableread{
+    X Y
+    1 1.65
+    2 4.12
+    3 4.49
+    4 9.66
+    5 0.46
+    6 1.92
+    7 3.88
+    8 8.46
+    9 9.05
+    10 7.44
+}\example
+
+% Document
+\begin{document}
+    \maketitle
+
+    \begin{itemize}
+        \item put a title that is clear what youre discussing
+        \item use abstract to sumarise data used and purpose
+        \item use a clear logically flowing structure
+        \item label figures and tables
+        \item short but comprehensive literature review (explaining describing the main methods well - what, why used, etc.)
+        \item make figures clear and readable
+        \\
+        \item justify methodology
+        \item analyse reserch question
+        \item summarise concepts used from lectures
+        \\
+        \item remember you're working with a time series (e.g. training on day d-1, validate on day d, and test on dat d+1); also remember to be careful when using things like cross-validation that dont necessarily work on time series data
+        
+    \end{itemize}
+
+    \centering
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            title={\emph{Figure 1: Example}},
+            xlabel={x},
+            ylabel={y},
+            xmin=0, xmax=10,
+            ymin=0, ymax=10,
+            legend pos=south east,
+            ymajorgrids=true,
+            xmajorgrids=true,
+            grid style=dashed,
+        ]
+
+        \addplot[
+            color=red,
+            mark=*,
+            ]
+            table {\example};
+            \addlegendentry{a plot}
+
+        \end{axis}
+    \end{tikzpicture}
+
+\end{document}
