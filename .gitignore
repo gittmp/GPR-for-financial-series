@@ -5,6 +5,8 @@ Figures/
 *.fls
 *.log
 *.gz
+*.bbl
+*.blg
 Report structure.pdf
 Report Marksheet.pdf
 .DS_Store
