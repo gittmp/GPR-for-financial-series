@@ -1,6 +1,7 @@
 % Preamble
 \documentclass[a4paper, 11pt]{article}
 \usepackage{blindtext}
+\usepackage{hyperref}
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -23,6 +24,10 @@
 
     \begin{abstract}
         In this report, the statistical modelling technique \emph{Gaussian process regression} is exploited to generate predictions over a financial time series (logarithmic returns of the cryptocurrency pair \emph{ETH/USD}). The method is shown to overcome challenges of complex systems, such as non-linear dependencies between variables and non-stationarity, producing a model that captures the highly volatile trend of this financial time series and generalises well to future observation times.   
+
+        The code associated with this project can be accessed on GitHub via the following link: 
+        
+        {\scriptsize \url{https://github.com/gittmp/GPR-for-financial-series/blob/main/gaussian_process.ipynb}}
     \end{abstract}
 
     \section{Introduction}
