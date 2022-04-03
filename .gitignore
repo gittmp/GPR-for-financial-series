@@ -7,6 +7,7 @@ Figures/
 *.gz
 *.bbl
 *.blg
+*.out
 Report structure.pdf
 Report Marksheet.pdf
 .DS_Store
